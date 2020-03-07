@@ -25,24 +25,24 @@ var johnMark = 'joh and johnMark';
 /* mutation and type coercion */
 
 var firstName = 'John';
-var age =28;
+var age = 28;
 console.log(firstName + ' ' + age);
 
-var job, isMarried; 
+var job, isMarried;
 job = 'teacher';
-isMarried = false; 
+isMarried = false;
 
-console.log(firstName + ' is a' + age + ' year old ' + job + 'is he married' + isMarried); 
+console.log(firstName + ' is a' + age + ' year old ' + job + 'is he married' + isMarried);
 
 
 // variable mutation
 age = 'twenty eight';
 job = 'driver';
 
-alert(firstName + ' is a' + age + ' year old ' + job + 'is he married' + isMarried); 
+alert(firstName + ' is a' + age + ' year old ' + job + 'is he married' + isMarried);
 
 var lastName = prompt('what is his last name?');
-console.log(firstName + ' ' + lastName) ;
+console.log(firstName + ' ' + lastName);
 
 // Basic operators
 
@@ -74,7 +74,7 @@ var yearJohn = 1989;
 var fullAge = 18;
 
 // table precedence
-var isFullAge = now - yearJohn >= fullAge; 
+var isFullAge = now - yearJohn >= fullAge;
 console.log(isFullAge);
 
 var ageJohn = now - yearJohn;
@@ -84,8 +84,8 @@ console.log(average);
 
 // Multiple assigment
 var x, y;
-x = y = (3 + 5) * 4 - 6; 
- console.log(x, y);
+x = y = (3 + 5) * 4 - 6;
+console.log(x, y);
 
 //  more operator 
 x *= 2;
@@ -99,7 +99,7 @@ x++;
 var massMark = 78;
 var heightMark = 1.69;
 
-var massJohn = 92; 
+var massJohn = 92;
 var heightJohn = 1.95;
 
 var BMIMark = massMark / (heightMark * heightMark);
@@ -116,14 +116,64 @@ console.log('IS Mark BMI higher than John?' + markHeigher);
 var firstName = 'John';
 var civilStatus = 'married';
 if (civilStatus === 'married') {
-    console.log( firstName + 'is married');
+    console.log(firstName + 'is married');
 } else {
     console.log(firstName + 'will hopefully marry soon :)');
 }
 
 var isMarried = true;
 if (civilStatus === 'married') {
-    console.log( firstName + 'is married');
+    console.log(firstName + 'is married');
 } else {
     console.log(firstName + 'will hopefully marry soon :)');
+}
+
+// Boolean logic
+
+var firstName = 'John';
+var age = 20;
+
+if (age < 13) {
+    console.log(firstName + 'is a boy')
+} else if (age >= 13 && age < 20) {
+    console.log(firstName + 'is a teenager')
+} else if (age >= 20 && age < 30) {
+    console.log(firstName + 'is a young man')
+} else {
+    console.log(firstName + ' is a man')
+}
+
+// the ternary operator 
+
+var firstName = 'John';
+var age = 16;
+
+// TRENARY OPERATOR
+age >= 18 ? console.log(firstName + 'drink beer') :
+    console.log(firstName + 'drinks juice');
+
+var drink = age >= 18 ? 'beer' : 'juice';
+
+// if (age >= 18) {
+//     var drink = 'beer';
+// } else {
+//     var drink = 'juice';
+// }
+
+// console.log(drink);
+
+//SWITH statement
+var job = 'teacher';
+switch (job) {
+    case 'teacher':
+        console.log(firstName + ' teaches kids how to Code.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives uber in Lisbon');
+        break;
+    case 'designer':
+        console.log(firstName + ' makes a beatuful website');
+        break;
+    default:
+        console.log(firstName + ' does somethng else');
 }
