@@ -177,3 +177,82 @@ switch (job) {
     default:
         console.log(firstName + ' does somethng else');
 }
+
+// Truthy and falsy values 
+
+// falsy values: undefined, null, 0, '', NaN
+
+// truthy values: NOT falsy values 
+
+var height;
+height = 0;
+
+if (height || height === 0){
+    console.log('variable is defined');
+} else {
+    console.log('variable has not been defined')
+};
+
+ 
+var johnTeam1 = 89;
+var johnTeam2 = 120; 
+var johnTeam3 = 103;
+
+// solution 1
+var johnAverage = (johnTeam1 + johnTeam2 + johnTeam3) / 3;
+console.log('John team score is' + johnAverage );
+
+var mikeTeam1 = 116;
+var mikeTeam2 = 94;
+var mikeTeam3 = 123;
+
+var mikeAverage = (mikeTeam1 + mikeTeam2 + mikeTeam3) / 3;
+console.log('Mike team score is' + mikeAverage );
+
+
+
+if (johnAverage > mikeAverage){
+    console.log('John wins with' + johnAverage)
+} else{
+    console.log('Mike wins with' + mikeAverage )
+}; 
+
+// solution2 way shorter
+var johnAverage = (89 + 120 + 103);
+var mikeAverage = (116 + 94 + 123);
+var marryAverage = (97 + 134 + 105);
+console.log(johnAverage, mikeAverage);
+
+if (johnAverage > mikeAverage && johnAverage > marryAverage){
+    console.log('john wins');
+} else if (mikeAverage > johnAverage && mikeAverage > marryAverage){
+    console.log('mike wins');
+} else if (marryAverage > johnAverage && marryAverage > mikeAverage){
+    console.log('marry wins');
+} else {
+    console.log('there is a draw');
+}
+
+
+
+// if (johnAverage > mikeAverage){
+//     console.log('John wins with' + johnAverage);
+// }else if (mikeAverage > johnAverage){
+//     console.log('Mike wins with' + johnAverage);
+// } else {
+//     console.log('There is a draw');
+// }
+
+
+// var maryTeam1 = 116;
+// var maryTeam2 = 94;
+// var maryTeam3 = 123;
+
+// var maryTeam = (maryTeam1 + maryTeam2 + maryTeam3) / 3;
+// console.log('her average score is' + maryTeam);
+
+// if (johnAverage > mikeAverage){
+//     console.log('John wins with' + johnAverage)
+// } else{
+//     console.log('Mike wins with' + mikeAverage )
+// }; 
