@@ -302,3 +302,7 @@ var whatDoYouDo = function(job, firstName) {
 }
 
  console.log(whatDoYouDo('teacher', 'John'));
+
+//  arrays
+
+ var names = ['john, 'Mark', 'Jane']
