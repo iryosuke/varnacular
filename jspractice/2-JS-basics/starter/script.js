@@ -187,35 +187,35 @@ switch (job) {
 var height;
 height = 0;
 
-if (height || height === 0){
+if (height || height === 0) {
     console.log('variable is defined');
 } else {
     console.log('variable has not been defined')
 };
 
- 
+
 var johnTeam1 = 89;
-var johnTeam2 = 120; 
+var johnTeam2 = 120;
 var johnTeam3 = 103;
 
 // solution 1
 var johnAverage = (johnTeam1 + johnTeam2 + johnTeam3) / 3;
-console.log('John team score is' + johnAverage );
+console.log('John team score is' + johnAverage);
 
 var mikeTeam1 = 116;
 var mikeTeam2 = 94;
 var mikeTeam3 = 123;
 
 var mikeAverage = (mikeTeam1 + mikeTeam2 + mikeTeam3) / 3;
-console.log('Mike team score is' + mikeAverage );
+console.log('Mike team score is' + mikeAverage);
 
 
 
-if (johnAverage > mikeAverage){
+if (johnAverage > mikeAverage) {
     console.log('John wins with' + johnAverage)
-} else{
-    console.log('Mike wins with' + mikeAverage )
-}; 
+} else {
+    console.log('Mike wins with' + mikeAverage)
+};
 
 // solution2 way shorter
 var johnAverage = (89 + 120 + 103);
@@ -223,11 +223,11 @@ var mikeAverage = (116 + 94 + 123);
 var marryAverage = (97 + 134 + 105);
 console.log(johnAverage, mikeAverage);
 
-if (johnAverage > mikeAverage && johnAverage > marryAverage){
+if (johnAverage > mikeAverage && johnAverage > marryAverage) {
     console.log('john wins');
-} else if (mikeAverage > johnAverage && mikeAverage > marryAverage){
+} else if (mikeAverage > johnAverage && mikeAverage > marryAverage) {
     console.log('mike wins');
-} else if (marryAverage > johnAverage && marryAverage > mikeAverage){
+} else if (marryAverage > johnAverage && marryAverage > mikeAverage) {
     console.log('marry wins');
 } else {
     console.log('there is a draw');
@@ -261,25 +261,25 @@ if (johnAverage > mikeAverage && johnAverage > marryAverage){
 function calculateAge(birthYear) {
     return (2018 - birthYear);
 }
- var ageJohn = calculateAge(1990);
- var ageMike = calculateAge(1948);
- var ageJane = calculateAge(1969);
- console.log(ageJane, ageMike, ageJane);
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
+console.log(ageJane, ageMike, ageJane);
 
- function yearsUntilRetirement(year, firstName){
-     var age = calculateAge(year);
-     var retirement = 65 - age;
+function yearsUntilRetirement(year, firstName) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
 
-     if (retirement > 0){
-         console.log(firstName + 'retires in ' + retirement + 'years.');
-     } else {
-         console.log(firstName + 'already retired');
-     }
- }
+    if (retirement > 0) {
+        console.log(firstName + 'retires in ' + retirement + 'years.');
+    } else {
+        console.log(firstName + 'already retired');
+    }
+}
 
- yearsUntilRetirement(1990, 'John');
- yearsUntilRetirement(1948, 'Mike');
- yearsUntilRetirement(1969, 'jane');
+yearsUntilRetirement(1990, 'John');
+yearsUntilRetirement(1948, 'Mike');
+yearsUntilRetirement(1969, 'jane');
 
 
 //  Function Statement and Expressions
@@ -289,20 +289,131 @@ function calculateAge(birthYear) {
 
 //Function expression
 var whatDoYouDo = function(job, firstName) {
-    switch(job){
+    switch (job) {
         case 'teacher':
             return firstName + 'teaches kids how to code';
         case 'driver':
             return firstName + 'teaches kids how to drive';
         case 'designer':
             return firstName + 'teaches kids how to design';
-        default: 
-        return firstName + 'shit';   
+        default:
+            return firstName + 'shit';
     }
 }
 
- console.log(whatDoYouDo('teacher', 'John'));
+console.log(whatDoYouDo('teacher', 'John'));
 
 //  arrays
 
- var names = ['john, 'Mark', 'Jane']
+//  var names = ['john, 'Mark', 'Jane']
+
+// function isTweetable(text) {
+//     return text.length <= 140;
+// }
+
+// function alertTweetable(text) {
+//     if (isTweetable(text)) {
+//         alerts("you can tweet")
+//     }
+// }
+
+// function bring(food){
+//     if(て)
+// }
+
+const foo = document.getElementById("foo");
+
+const fooHeight = foo.offsetheight;
+
+const fooWidth = foo.offsetWidth;
+
+const fooArea = fooWidth * fooheight;
+
+
+function cut(food) {
+    const cutFood = food.slice()
+    return　 cutFood;
+}
+
+const cutCarrot(carrot); // ninjin 
+const cutPotate(potate); // potate
+
+
+// return が入らない場合もある　
+
+function isTweetable(text) {
+    return text.length <= 140; //textに.lengthをつけることで長さを取得することがで
+};
+
+//関数式（ 関数を変数の中に値として入れ込んだんもの）
+const isTweetable = function(text) {
+    return text.length <= 140;
+};
+
+// 名前がなくて動く関数（匿名関数）
+
+console.log(isTweetable("foo"));
+
+function alertTweetable(text) {
+    if (text.length <= 140) {
+        alert("you can tweet")
+    }
+}
+
+
+function 高階関数（ コールバック関数） {
+    コールバック関数（）;
+}
+
+// 関数の中で関数を実行するもの
+
+function bring(food) {
+    if (手洗いが終わったら) {
+        //食材を持ってきてもらう処理
+    }
+}
+
+function peer(food) {
+    if (剥いたら) {
+        //食材の皮をむく処理
+    }
+}
+
+function cut(food) {
+    if (切ったら)　 {
+        //きる処理
+    }
+}
+
+// 高階関数を使った場合の処理
+
+function washed(fn) {
+    if (手洗いがおわっtら) {
+        fn();
+    }
+}
+
+function bring(food) {
+    //食材を持ってきてもらう処理
+}
+
+const todos = [{
+        id: 1,
+        text: 'take out trash',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        text: 'take out trash',
+        isCompleted: true
+    },
+    {
+        id: 3,
+        text: 'take out trash',
+        isCompleted: false
+    },
+
+];
+
+const todoJason = JSON.stringify(todos);
+console.log(todos)
