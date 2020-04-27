@@ -206,3 +206,25 @@ var fibonacci_series = function(n) {
 };
 
 console.log(fibonacci_series(10));
+
+for (var i = john.length - 1; i >= 0; i--) {
+    console.log(john[i]);
+}
+
+
+var bills = [124, 48, 268, 180, 42];
+for (var i = 0; i < bills.length; i++) {};
+
+function tipCalculator2() {
+    var percentage;
+    if (bills[i] < 50) {
+        percentage = 0.2;
+    } else if (bills[i] > 50 && bill <= 200) {
+        percentage = 0.15;
+    } else if (bills[i] > 200) {
+        percentage = 0.1;
+    }
+    return percentage * bills[i];
+};
+
+console.log(tipCalculator2());
