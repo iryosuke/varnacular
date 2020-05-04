@@ -235,6 +235,7 @@ function toCelsius(f){
 
 console.log(toCelsius(60));
 
+//loop appllication 
 var john = {
     fullName : 'John Smith',
     bills : [124, 48, 268, 180, 42], 
@@ -263,13 +264,80 @@ var john = {
 
 john.calTips();
 console.log(john);
-console.log(john.tips[]);
 
-function sumTips() {
-    for (var i = 0; i < john.tips[i]; i++)
-    {
-        john.tips
+
+function calcAverage(tips) {
+    var sum = 0;
+    for (var i = 0; i < tips.length; i++) {
+        sum = sum + tips[i];
     }
+    return sum / tips.length;
 }
 
-console.log(sumTips());
+//do the calculation 
+
+john.average = calcAverage(john.tips);
+console.log(john);
+
+
+
+var john = {
+    bills : [124, 48, 268, 180, 42],
+    tipCalculate : function() {
+        this.tips = [];
+        this.totalValue = [];
+
+        for (var i = 0; i < bills.length; i++)
+        {
+            var bill = this.bills[i];
+            var percentage;
+
+            if (bill > 50) {
+            percentage = .2;
+            } else if (bill > 50 && bill <200) {
+            percentage = .15;
+            } else {
+            percentage = .1;
+            }
+
+            this.tips = bill * percentage;
+            this.totalValue = bill + bill * percentage;
+        }
+    }
+}
+john.tipCalculate();
+console.log(john);
+
+async function callApi(){
+    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    const users = await res.json();
+    console.log(users);
+}
+
+callApi();
+
+const button = document.getElementById("addBtn");
+const lists = document.getElementById("lists");
+async function listUsers() {
+    // データのやり取り
+    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    const users = await res.json();
+
+    // DOM manipulation
+    for(var i = 0; i < users.length; i++) {
+        const user = users[i];
+        const list = document.createElement("li");
+        list.innerText = user.name;
+        lists.appendChild(list);
+    }
+
+    // users.forEach(function(user){
+    //     const list = document.createElement("li");
+    //     list.innerText = user.name;
+    //     lists.appendChild(list);
+    // })
+}
+
+button.addEventListener("click",listUsers);
+
+window.addEventListener("load",listUsers);
