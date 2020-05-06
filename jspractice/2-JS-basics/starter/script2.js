@@ -229,30 +229,29 @@ function tipCalculator2() {
 
 console.log(tipCalculator2());
 
-function toCelsius(f){
-    return 3 * (f-30);
+function toCelsius(f) {
+    return 3 * (f - 30);
 }
 
 console.log(toCelsius(60));
 
 //loop appllication 
 var john = {
-    fullName : 'John Smith',
-    bills : [124, 48, 268, 180, 42], 
+    fullName: 'John Smith',
+    bills: [124, 48, 268, 180, 42],
     calTips: function() {
         this.tips = [];
         this.finalValues = [];
 
-        for (var i = 0; i < this.bills.length; i++)
-        {
+        for (var i = 0; i < this.bills.length; i++) {
             var percentage;
             var bill = this.bills[i];
 
             if (bill < 50) {
                 percentage = .2;
-            }else if (bill >= 50 && bill < 200) {
+            } else if (bill >= 50 && bill < 200) {
                 percentage = .15;
-            }else {
+            } else {
                 percentage = -1;
             }
 
@@ -282,22 +281,21 @@ console.log(john);
 
 
 var john = {
-    bills : [124, 48, 268, 180, 42],
-    tipCalculate : function() {
+    bills: [124, 48, 268, 180, 42],
+    tipCalculate: function() {
         this.tips = [];
         this.totalValue = [];
 
-        for (var i = 0; i < bills.length; i++)
-        {
+        for (var i = 0; i < bills.length; i++) {
             var bill = this.bills[i];
             var percentage;
 
             if (bill > 50) {
-            percentage = .2;
-            } else if (bill > 50 && bill <200) {
-            percentage = .15;
+                percentage = .2;
+            } else if (bill > 50 && bill < 200) {
+                percentage = .15;
             } else {
-            percentage = .1;
+                percentage = .1;
             }
 
             this.tips = bill * percentage;
@@ -308,13 +306,15 @@ var john = {
 john.tipCalculate();
 console.log(john);
 
-async function callApi(){
+async function callApi() {
     const res = await fetch("https://jsonplaceholder.typicode.com/users");
     const users = await res.json();
     console.log(users);
 }
 
 callApi();
+
+// Good example
 
 const button = document.getElementById("addBtn");
 const lists = document.getElementById("lists");
@@ -324,7 +324,7 @@ async function listUsers() {
     const users = await res.json();
 
     // DOM manipulation
-    for(var i = 0; i < users.length; i++) {
+    for (var i = 0; i < users.length; i++) {
         const user = users[i];
         const list = document.createElement("li");
         list.innerText = user.name;
@@ -338,6 +338,34 @@ async function listUsers() {
     // })
 }
 
-button.addEventListener("click",listUsers);
+button.addEventListener("click", listUsers);
 
-window.addEventListener("load",listUsers);
+window.addEventListener("load", listUsers);
+
+
+// Hoisting 
+
+//function
+calculateAge(1965);
+
+function calculateAge(year) {
+    console.log(2016 - year);
+}
+
+// retirement(1990);
+var retirement = function(year) {
+    console.log(65 - (2016 - year));
+}
+
+//variables
+
+console.log(age);
+var age = 23;
+console.log(age);
+
+function foo() {
+    var age = 65;
+    console.log(age);
+}
+foo();
+console.log(age);
