@@ -1,5 +1,5 @@
 var scores, roundScore, activePlayer, gamePlaying;  
-init();
+init();111
 
 dice = Math.floor(Math.random() * 6) + 1;
 
