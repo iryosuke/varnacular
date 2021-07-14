@@ -1,1 +1,22 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.header_container_logo {
+  text-align: center;
+}
+
+.header_container_nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.header_container_nav_list_item {
+  margin-right: 24px;
+}
+
+.header_container_nav_list_item_link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
