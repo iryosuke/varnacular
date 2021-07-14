@@ -1,8 +1,13 @@
-.header_container_logo {
-  text-align: center;
+body {
+  font-family: 'PT Sans', sans-serif;
 }
 
-.header_container_nav_list {
+body .header_container_logo {
+  text-align: center;
+  margin: 24px 0 24px 0;
+}
+
+body .header_container_nav_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,13 +15,77 @@
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
-.header_container_nav_list_item {
+body .header_container_nav_list_item {
   margin-right: 24px;
 }
 
-.header_container_nav_list_item_link {
+body .header_container_nav_list_item_link {
+  color: #6B6B6B;
   text-decoration: none;
+}
+
+body main .cover-image {
+  text-align: center;
+  line-height: 0;
+}
+
+body main .what-we-do {
+  background-color: #F2F2F2;
+}
+
+body main .what-we-do_title {
+  line-height: 0.7;
+  font-weight: lighter;
+  color: #ffffff;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 48px;
+}
+
+body main .what-we-do_description {
+  text-align: center;
+  color: #6B6B6B;
+}
+
+body main .what-we-do_content {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #6B6B6B;
+}
+
+body main .what-we-do_content_item {
+  margin: 0 24px 0 24px;
+}
+
+body main .what-we-do_content_item_title {
+  font-size: 32px;
+  text-align: center;
+}
+
+body main .what-we-do_content_item_img {
+  max-width: 450px;
+}
+
+body .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .border {
+  border: solid #6B6B6B 1px;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 /*# sourceMappingURL=style.css.map */
