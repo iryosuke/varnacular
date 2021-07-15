@@ -1,5 +1,5 @@
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
 body header {
@@ -94,6 +94,11 @@ body main .what-we-do_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #6B6B6B;
 }
 
@@ -139,6 +144,57 @@ body main .projects-image-container {
 
 body main .projects-image-container_item {
   line-height: 0;
+}
+
+body main .projects-image-container_item:hover {
+  opacity: 0.6;
+}
+
+body main footer {
+  color: #2E2D2D;
+  background-color: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main footer .corporate-info {
+  margin: 48px 0 48px 48px;
+}
+
+body main footer .corporate-info_description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+body main footer .links {
+  margin: 48px 0 48px;
+}
+
+body main footer .links_title {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+body main footer .links_list {
+  padding: 0;
+  padding-top: 16px;
+  width: 500px;
+  border-top: solid 1px #6B6B6B;
+}
+
+body main footer .links_list_item {
+  margin-top: 8px;
+  list-style: none;
+}
+
+body main footer .links_list_item_link {
+  color: #2E2D2D;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 body .flex-container {

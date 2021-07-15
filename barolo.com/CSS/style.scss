@@ -5,7 +5,7 @@ $tertiary-white:#F2F2F2;
 $primary-gray:#6B6B6B;
 $primary-black:#2E2D2D;
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     header {
         position: fixed;
         right: 0;
@@ -80,6 +80,8 @@ body {
             &_content {
                 list-style: none;
                 display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
                 color: $primary-gray;
                 &_item {
                     margin: 0 24px 0 24px;
@@ -114,6 +116,44 @@ body {
                 justify-content: center;
                 &_item {
                     line-height: 0;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+        footer {
+            color: $primary-black;
+            background-color: $tertiary-white;
+            display: flex;
+            justify-content: space-between;
+            .corporate-info {
+                margin: 48px 0 48px 48px;
+                &_description {
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+            }
+            .links {
+                margin: 48px 0 48px;
+                &_title {
+                    font-size: 18px;
+                    font-weight: lighter;
+                }
+                &_list {
+                    padding: 0;
+                    padding-top: 16px;
+                    width: 500px;
+                    border-top: solid 1px $primary-gray;
+                    &_item {
+                        margin-top: 8px;
+                        list-style: none;
+                        &_link {
+                            color: $primary-black;
+                            font-size: 14px;
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
         }
