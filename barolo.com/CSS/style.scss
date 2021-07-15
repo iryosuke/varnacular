@@ -71,7 +71,7 @@ body {
                 color: $primary-white;
                 font-size: 48px;
                 text-align: center;
-                margin-top: 48px;
+                margin-top: 84px;
             }
             &_description {
                 text-align: center;
@@ -84,12 +84,36 @@ body {
                 &_item {
                     margin: 0 24px 0 24px;
                     &_title {
+                        font-weight: lighter;
                         font-size: 32px;
                         text-align: center;
                     }
                     &_img {
                         max-width: 450px;
                     }
+                }
+            }
+        }
+        .projects {
+            &_title {
+                text-align: center;
+                font-weight: lighter;
+                color: $primary-gray;
+                font-size: 48px;
+                margin-top: 84px;
+            }
+            &_description {
+                color: $primary-gray;
+                text-align: center;
+            }
+            &-image-container {
+                list-style: none;
+                width: 1155px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                &_item {
+                    line-height: 0;
                 }
             }
         }
