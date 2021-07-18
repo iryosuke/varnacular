@@ -240,4 +240,11 @@ body .slideshow_image {
   -webkit-transition: opacity 3s ease-in-out;
   transition: opacity 3s ease-in-out;
 }
+
+@media only screen and (max-width: 1256px) {
+  body .slideshow_image {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 /*# sourceMappingURL=style.css.map */
