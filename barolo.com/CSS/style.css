@@ -69,6 +69,7 @@ body main {
 body main .cover-image {
   text-align: center;
   line-height: 0;
+  height: 814px;
 }
 
 body main .what-we-do {
@@ -224,5 +225,19 @@ body .border {
   margin: 0 auto;
   margin-top: 48px;
   margin-bottom: 48px;
+}
+
+body .slideshow_image {
+  margin-top: 134px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0;
+  -webkit-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

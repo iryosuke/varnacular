@@ -7,11 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/color.css">
     <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="JS/style.js"></script>
     <meta name="viewport" content="width=device-width">
 </head>
 
@@ -34,7 +34,9 @@
     </header>
     <main>
         <div class="cover-image">
-            <img src="images/barolo-front-image.jpeg" alt="製品のイメージを表す流線型のイメージ">
+            <img class="slideshow_image" src="images/barolo-front-image.jpeg" alt="製品のイメージを表す流線型のイメージ">
+            <img class="slideshow_image" src="images/barolo-front-image.jpeg" alt="製品のイメージを表す流線型のイメージ">
+            <img class="slideshow_image" src="images/barolo-front-image.jpeg" alt="製品のイメージを表す流線型のイメージ">
         </div>
         <div class="what-we-do">
             <h1 class="what-we-do_title">WHAT WE DO</h1>
@@ -102,5 +104,24 @@
         </footer>
     </main>
 </body>
+<script>
+    const slideshowImages = document.querySelectorAll(".slideshow_image");
+
+    const nextImageDelay = 3000;
+    let currentImageCounter = 0;
+
+    // slideshowImages[currentImageCounter].style.displpay = "block";
+    slideshowImages[currentImageCounter].style.opacity = 1;
+
+    setInterval(nextImage, nextImageDelay);
+
+    function nextImage() {
+        // slideshowImages[currentImageCounter].style.display = "none";
+        slideshowImages[currentImageCounter].style.opacity = "0";
+        currentImageCounter = (currentImageCounter + 1) % slideshowImages.length;
+        // slideshowImages[currentImageCounter].style.displpay = "block";
+        slideshowImages[currentImageCounter].style.opacity = "1";
+    }
+</script>
 
 </html>
