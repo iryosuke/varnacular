@@ -81,16 +81,18 @@ body {
             text-align: center;
             line-height: 0;
             height: 814px;
+            position: relative;
         }
         .what-we-do {
             background-color: $tertiary-white;
+            margin-top: 84px;
             &_title {
                 line-height: 0.7;
                 font-weight: lighter;
                 color: $primary-white;
                 font-size: 48px;
                 text-align: center;
-                margin-top: 84px;
+                margin-top: 0;
             }
             &_description {
                 text-align: center;
@@ -116,12 +118,13 @@ body {
             }
         }
         .projects {
+            margin-top: 84px;
             &_title {
                 text-align: center;
                 font-weight: lighter;
                 color: $primary-gray;
                 font-size: 48px;
-                margin-top: 84px;
+                margin-top: 0px;
             }
             &_description {
                 color: $primary-gray;
@@ -152,8 +155,8 @@ body {
                             width: 50%;
                             box-sizing: border-box;
                             background: rgba(0, 0, 0, 0.5);
-                            -webkit-transition: all 0.3s ease;
-                            transition: all 0.3s ease;
+                            -webkit-transition: all 0.6s ease;
+                            transition: all 0.6s ease;
                             overflow: hidden;
                         }
                         &_link {
@@ -246,7 +249,6 @@ body {
         margin-bottom: 48px;
     }
     .slideshow_image {
-        margin-top: 134px;
         position: absolute;
         top: 0;
         left: 0;
