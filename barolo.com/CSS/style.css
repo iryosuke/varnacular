@@ -7,7 +7,7 @@ body header {
   right: 0;
   left: 0;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 body header .header_container_logo {
@@ -55,11 +55,33 @@ body header .header_container_nav_list {
 
 body header .header_container_nav_list_item {
   margin-right: 24px;
+  position: relative;
 }
 
 body header .header_container_nav_list_item_link {
   color: #6B6B6B;
   text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+body header .header_container_nav_list_item_link::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+body header .header_container_nav_list_item_link:hover::after {
+  width: 100%;
 }
 
 body main {
@@ -166,7 +188,7 @@ body main .projects-image-container_item_hover::after {
   width: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   overflow: hidden;
