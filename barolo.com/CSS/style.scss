@@ -18,6 +18,7 @@ body {
                 margin: 24px 0 24px 0;
             }
             &_nav {
+                font-size: 14px;
                 &_list {
                     display: flex;
                     justify-content: center;
@@ -38,6 +39,11 @@ body {
             &_logo {
                 text-align: center;
                 margin: 24px 0 24px 0;
+                &_link {
+                    &_img {
+                        width: 150px;
+                    }
+                }
             }
             &_nav {
                 &_list {
@@ -100,19 +106,25 @@ body {
             }
             .flex-container {
                 .what-we-do_content {
+                    padding: 0;
                     list-style: none;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
                     color: $primary-gray;
                     &_item {
+                        max-width: 400px;
+                        min-width: 300px;
                         position: relative;
                         margin: 0 24px 0 24px;
+                        &_title {
+                            letter-spacing: -1px;
+                        }
                         &_hover {
                             position: absolute;
                             display: block;
                             width: 100%;
-                            height: 64%;
+                            height: 62%;
                             &::after {
                                 opacity: 0;
                                 content: "";
@@ -139,13 +151,16 @@ body {
                                 opacity: 0;
                                 color: $primary-white;
                                 position: relative;
-                                margin-top: 130px;
+                                margin-top: 140px;
                                 text-align: center;
                                 letter-spacing: 2;
+                                &_title {
+                                    font-size: 18px;
+                                }
                             }
                         }
                         &_img {
-                            width: 450px;
+                            width: 100%;
                         }
                         &_title {
                             font-weight: lighter;
@@ -185,9 +200,15 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                padding: 0;
                 &_item {
                     position: relative;
                     line-height: 0;
+                    max-width: 400px;
+                    min-width: 300px;
+                    &_image {
+                        width: 100%;
+                    }
                     &_hover {
                         position: absolute;
                         display: block;
@@ -249,8 +270,12 @@ body {
             background-color: $tertiary-white;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             .corporate-info {
                 margin: 48px 0 48px 48px;
+                &_logo {
+                    width: 150px;
+                }
                 &_description {
                     font-size: 14px;
                     line-height: 1.5;
@@ -258,6 +283,8 @@ body {
             }
             .links {
                 margin: 48px 0 48px;
+                width: 360px;
+                margin-left: 16px;
                 &_title {
                     font-size: 18px;
                     font-weight: lighter;
@@ -265,43 +292,67 @@ body {
                 &_list {
                     padding: 0;
                     padding-top: 16px;
-                    width: 500px;
                     border-top: solid 1px $primary-gray;
                     &_item {
                         margin-top: 8px;
                         list-style: none;
+                        position: relative;
                         &_link {
-                            color: $primary-black;
+                            color: $primary-gray;
                             font-size: 14px;
                             text-decoration: none;
+                            transition: all .5s;
+                            &:hover {
+                                color: $primary-black;
+                                border-bottom: solid $primary-black 1px;
+                            }
                         }
                     }
                 }
             }
         }
     }
-    // generic class 
-    .flex-container {
-        display: flex;
-        justify-content: center;
-    }
-    .border {
-        border: solid $primary-gray 1px;
-        width: 100px;
-        margin: 0 auto;
-        margin-top: 48px;
-        margin-bottom: 48px;
-    }
-    .slideshow_image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        // display: none;
+}
+
+// generic class 
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    border-top: solid $primary-gray 1px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.slideshow_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    // display: none;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+@media only screen and (max-width:600px) {
+    .projects-image-container_item_hover_content,
+    .projects-image-container_item_hover_content::after {
         opacity: 0;
-        transition: opacity 3s ease-in-out;
+    }
+    .what-we-do_content_item {
+        width: 300px;
+    }
+    body main .what-we-do .flex-container .what-we-do_content_item_hover {
+        height: 49%;
+    }
+    body main .what-we-do .flex-container .what-we-do_content_item_hover_content {
+        margin-top: 90px;
     }
 }
 

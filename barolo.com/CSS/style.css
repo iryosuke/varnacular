@@ -15,6 +15,10 @@ body header .header_container_logo {
   margin: 24px 0 24px 0;
 }
 
+body header .header_container_nav {
+  font-size: 14px;
+}
+
 body header .header_container_nav_list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +43,10 @@ body header .header_container_nav_list_item_link {
 body header .header_container_logo {
   text-align: center;
   margin: 24px 0 24px 0;
+}
+
+body header .header_container_logo_link_img {
+  width: 150px;
 }
 
 body header .header_container_nav_list {
@@ -115,6 +123,7 @@ body main .what-we-do_description {
 }
 
 body main .what-we-do .flex-container .what-we-do_content {
+  padding: 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,15 +137,21 @@ body main .what-we-do .flex-container .what-we-do_content {
 }
 
 body main .what-we-do .flex-container .what-we-do_content_item {
+  max-width: 400px;
+  min-width: 300px;
   position: relative;
   margin: 0 24px 0 24px;
+}
+
+body main .what-we-do .flex-container .what-we-do_content_item_title {
+  letter-spacing: -1px;
 }
 
 body main .what-we-do .flex-container .what-we-do_content_item_hover {
   position: absolute;
   display: block;
   width: 100%;
-  height: 64%;
+  height: 62%;
 }
 
 body main .what-we-do .flex-container .what-we-do_content_item_hover::after {
@@ -168,13 +183,17 @@ body main .what-we-do .flex-container .what-we-do_content_item_hover_content {
   opacity: 0;
   color: #ffffff;
   position: relative;
-  margin-top: 130px;
+  margin-top: 140px;
   text-align: center;
   letter-spacing: 2;
 }
 
+body main .what-we-do .flex-container .what-we-do_content_item_hover_content_title {
+  font-size: 18px;
+}
+
 body main .what-we-do .flex-container .what-we-do_content_item_img {
-  width: 450px;
+  width: 100%;
 }
 
 body main .what-we-do .flex-container .what-we-do_content_item_title {
@@ -223,11 +242,18 @@ body main .projects-image-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
 }
 
 body main .projects-image-container_item {
   position: relative;
   line-height: 0;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+body main .projects-image-container_item_image {
+  width: 100%;
 }
 
 body main .projects-image-container_item_hover {
@@ -301,10 +327,16 @@ body main footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body main footer .corporate-info {
   margin: 48px 0 48px 48px;
+}
+
+body main footer .corporate-info_logo {
+  width: 150px;
 }
 
 body main footer .corporate-info_description {
@@ -314,6 +346,8 @@ body main footer .corporate-info_description {
 
 body main footer .links {
   margin: 48px 0 48px;
+  width: 360px;
+  margin-left: 16px;
 }
 
 body main footer .links_title {
@@ -324,22 +358,29 @@ body main footer .links_title {
 body main footer .links_list {
   padding: 0;
   padding-top: 16px;
-  width: 500px;
   border-top: solid 1px #6B6B6B;
 }
 
 body main footer .links_list_item {
   margin-top: 8px;
   list-style: none;
+  position: relative;
 }
 
 body main footer .links_list_item_link {
-  color: #2E2D2D;
+  color: #6B6B6B;
   font-size: 14px;
   text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-body .flex-container {
+body main footer .links_list_item_link:hover {
+  color: #2E2D2D;
+  border-bottom: solid #2E2D2D 1px;
+}
+
+.flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,15 +389,15 @@ body .flex-container {
           justify-content: center;
 }
 
-body .border {
-  border: solid #6B6B6B 1px;
+.border {
+  border-top: solid #6B6B6B 1px;
   width: 100px;
   margin: 0 auto;
   margin-top: 48px;
   margin-bottom: 48px;
 }
 
-body .slideshow_image {
+.slideshow_image {
   position: absolute;
   top: 0;
   left: 0;
@@ -367,6 +408,22 @@ body .slideshow_image {
   opacity: 0;
   -webkit-transition: opacity 3s ease-in-out;
   transition: opacity 3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects-image-container_item_hover_content,
+  .projects-image-container_item_hover_content::after {
+    opacity: 0;
+  }
+  .what-we-do_content_item {
+    width: 300px;
+  }
+  body main .what-we-do .flex-container .what-we-do_content_item_hover {
+    height: 49%;
+  }
+  body main .what-we-do .flex-container .what-we-do_content_item_hover_content {
+    margin-top: 90px;
+  }
 }
 
 @media only screen and (max-width: 1256px) {
