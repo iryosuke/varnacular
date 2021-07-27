@@ -265,47 +265,47 @@ body {
                 }
             }
         }
-        footer {
-            color: $primary-black;
-            background-color: $tertiary-white;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            .corporate-info {
-                margin: 48px 0 48px 48px;
-                &_logo {
-                    width: 150px;
-                }
-                &_description {
-                    font-size: 14px;
-                    line-height: 1.5;
-                }
+    }
+    footer {
+        color: $primary-black;
+        background-color: $tertiary-white;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .corporate-info {
+            margin: 48px 0 48px 48px;
+            &_logo {
+                width: 150px;
             }
-            .links {
-                margin: 48px 0 48px;
-                width: 360px;
-                margin-left: 16px;
-                &_title {
-                    font-size: 18px;
-                    font-weight: lighter;
-                }
-                &_list {
-                    padding: 0;
-                    padding-top: 16px;
-                    border-top: solid 1px $primary-gray;
-                    &_item {
-                        margin-top: 8px;
-                        list-style: none;
-                        position: relative;
-                        &_link {
-                            color: $primary-gray;
-                            font-size: 14px;
-                            text-decoration: none;
-                            transition: all .5s;
-                            &:hover {
-                                color: $primary-black;
-                                border-bottom: solid $primary-black 1px;
-                            }
+            &_description {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+        .links {
+            margin: 48px 0 48px;
+            width: 360px;
+            margin-left: 16px;
+            &_title {
+                font-size: 18px;
+                font-weight: lighter;
+            }
+            &_list {
+                padding: 0;
+                padding-top: 16px;
+                border-top: solid 1px $primary-gray;
+                &_item {
+                    margin-top: 8px;
+                    list-style: none;
+                    position: relative;
+                    &_link {
+                        color: $primary-gray;
+                        font-size: 14px;
+                        text-decoration: none;
+                        transition: all .5s;
+                        &:hover {
+                            color: $primary-black;
+                            border-bottom: solid $primary-black 1px;
                         }
                     }
                 }

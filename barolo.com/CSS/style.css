@@ -318,7 +318,7 @@ body main .projects-image-container_item:hover .projects-image-container_item_ho
   z-index: 2;
 }
 
-body main footer {
+body footer {
   color: #2E2D2D;
   background-color: #F2F2F2;
   display: -webkit-box;
@@ -331,43 +331,43 @@ body main footer {
       flex-wrap: wrap;
 }
 
-body main footer .corporate-info {
+body footer .corporate-info {
   margin: 48px 0 48px 48px;
 }
 
-body main footer .corporate-info_logo {
+body footer .corporate-info_logo {
   width: 150px;
 }
 
-body main footer .corporate-info_description {
+body footer .corporate-info_description {
   font-size: 14px;
   line-height: 1.5;
 }
 
-body main footer .links {
+body footer .links {
   margin: 48px 0 48px;
   width: 360px;
   margin-left: 16px;
 }
 
-body main footer .links_title {
+body footer .links_title {
   font-size: 18px;
   font-weight: lighter;
 }
 
-body main footer .links_list {
+body footer .links_list {
   padding: 0;
   padding-top: 16px;
   border-top: solid 1px #6B6B6B;
 }
 
-body main footer .links_list_item {
+body footer .links_list_item {
   margin-top: 8px;
   list-style: none;
   position: relative;
 }
 
-body main footer .links_list_item_link {
+body footer .links_list_item_link {
   color: #6B6B6B;
   font-size: 14px;
   text-decoration: none;
@@ -375,7 +375,7 @@ body main footer .links_list_item_link {
   transition: all .5s;
 }
 
-body main footer .links_list_item_link:hover {
+body footer .links_list_item_link:hover {
   color: #2E2D2D;
   border-bottom: solid #2E2D2D 1px;
 }
