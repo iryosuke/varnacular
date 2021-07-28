@@ -368,16 +368,43 @@
                 // about-us html　↓↓↓↓↓↓
                 main {
                     .main-container {
+                        padding: 0 16px 0 16px;
                         margin: 0 auto;
                         max-width: 700px;
+                        color: $primary-black;
+                        &_external {
+                            margin-bottom: 48px;
+                            &_link {
+                                color: darken($primary-black, 10%);
+                                font-weight: bold;
+                            }
+                        }
+                        .block1,
+                        .block2 {
+                            margin-bottom: 48px;
+                            line-height: 2;
+                            .subtitle {
+                                font-size: 18px;
+                                &_description {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
                         &_title {
                             text-align: center;
+                            font-size: 32px;
+                            font-weight: lighter;
+                            margin: 32px 0 32px 0;
                         }
                     }
                     .main-content {
                         background-color: $tertiary-white;
+                        color: $primary-black;
                         &_title {
                             text-align: center;
+                            margin: 0;
+                            padding: 32px 0 32px 0;
+                            font-weight: lighter;
                         }
                         &_block {
                             &_1 {
@@ -400,6 +427,9 @@
                                     align-items: center;
                                     &_content {
                                         &_detail {
+                                            &_title {
+                                                text-align: center;
+                                            }
                                             &_description {
                                                 line-height: 2;
                                                 font-size: 14px;
@@ -418,7 +448,6 @@
                                 flex-direction: row-reverse;
                                 margin: 0 auto;
                                 &_right {
-                                    padding: 0 48px 0 48px;
                                     box-sizing: border-box;
                                     width: 50%;
                                     &_img {
@@ -435,6 +464,9 @@
                                     align-items: center;
                                     &_content {
                                         &_detail {
+                                            &_title {
+                                                text-align: center;
+                                            }
                                             &_description {
                                                 line-height: 2;
                                                 font-size: 14px;
@@ -454,8 +486,10 @@
                         &_description {
                             line-height: 2;
                             font-size: 14px;
+                            margin: 64px 16px 24px 16px;
                         }
                         &_button {
+                            margin-bottom: 64px;
                             background-color: transparent;
                             border: none;
                             cursor: pointer;
@@ -463,11 +497,11 @@
                             padding: 0;
                             appearance: none;
                             background-color: $primary-black;
-                            padding: 12px 8px 12px 8px;
-                            border-radius: 4px;
+                            padding: 12px 16px 12px 16px;
                             &_text {
                                 color: $primary-white;
                                 text-decoration: none;
+                                font-size: 20px;
                             }
                         }
                     }

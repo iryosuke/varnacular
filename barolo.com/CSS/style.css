@@ -437,20 +437,54 @@ body footer .links_list_item_link:hover {
 }
 
 main .main-container {
+  padding: 0 16px 0 16px;
   margin: 0 auto;
   max-width: 700px;
+  color: #2E2D2D;
+}
+
+main .main-container_external {
+  margin-bottom: 48px;
+}
+
+main .main-container_external_link {
+  color: #141414;
+  font-weight: bold;
+}
+
+main .main-container .block1,
+main .main-container .block2 {
+  margin-bottom: 48px;
+  line-height: 2;
+}
+
+main .main-container .block1 .subtitle,
+main .main-container .block2 .subtitle {
+  font-size: 18px;
+}
+
+main .main-container .block1 .subtitle_description,
+main .main-container .block2 .subtitle_description {
+  font-size: 14px;
 }
 
 main .main-container_title {
   text-align: center;
+  font-size: 32px;
+  font-weight: lighter;
+  margin: 32px 0 32px 0;
 }
 
 main .main-content {
   background-color: #F2F2F2;
+  color: #2E2D2D;
 }
 
 main .main-content_title {
   text-align: center;
+  margin: 0;
+  padding: 32px 0 32px 0;
+  font-weight: lighter;
 }
 
 main .main-content_block_1 {
@@ -485,6 +519,10 @@ main .main-content_block_1_left {
           align-items: center;
 }
 
+main .main-content_block_1_left_content_detail_title {
+  text-align: center;
+}
+
 main .main-content_block_1_left_content_detail_description {
   line-height: 2;
   font-size: 14px;
@@ -509,7 +547,6 @@ main .main-content_block_2 {
 }
 
 main .main-content_block_2_right {
-  padding: 0 48px 0 48px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 50%;
@@ -535,6 +572,10 @@ main .main-content_block_2_left {
           align-items: center;
 }
 
+main .main-content_block_2_left_content_detail_title {
+  text-align: center;
+}
+
 main .main-content_block_2_left_content_detail_description {
   line-height: 2;
   font-size: 14px;
@@ -553,9 +594,11 @@ main .message-banner {
 main .message-banner_description {
   line-height: 2;
   font-size: 14px;
+  margin: 64px 16px 24px 16px;
 }
 
 main .message-banner_button {
+  margin-bottom: 64px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -565,12 +608,12 @@ main .message-banner_button {
      -moz-appearance: none;
           appearance: none;
   background-color: #2E2D2D;
-  padding: 12px 8px 12px 8px;
-  border-radius: 4px;
+  padding: 12px 16px 12px 16px;
 }
 
 main .message-banner_button_text {
   color: #ffffff;
   text-decoration: none;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
