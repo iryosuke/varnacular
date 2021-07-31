@@ -616,4 +616,43 @@ main .message-banner_button_text {
   text-decoration: none;
   font-size: 20px;
 }
+
+main .main-container_block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px;
+      grid-template-columns: 300px 300px;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  row-gap: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .main-container_block_wrapper_container {
+  max-width: 300px;
+  height: 400px;
+}
+
+main .main-container_block_wrapper_container_img {
+  width: 100%;
+}
+
+main .product-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  row-gap: 16px;
+}
+
+main .product-list_item {
+  width: 300px;
+}
 /*# sourceMappingURL=style.css.map */

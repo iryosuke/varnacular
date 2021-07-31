@@ -506,3 +506,39 @@
                         }
                     }
                 }
+                
+                // Service page
+                main {
+                    .main-container {
+                        &_title {}
+                        &_description {}
+                        &_block {
+                            display: grid;
+                            grid-template-columns: 300px 300px;
+                            column-gap: 16px;
+                            row-gap: 16px;
+                            justify-content: center;
+                            &_wrapper {
+                                &_container {
+                                    max-width: 300px;
+                                    height: 400px;
+                                    &_img {
+                                        width: 100%;
+                                    }
+                                    &_title {}
+                                    &_description {}
+                                }
+                            }
+                        }
+                    }
+                    .product-list {
+                        display: grid;
+                        grid-template-columns: 300px 300px 300px;
+                        justify-content: center;
+                        column-gap: 16px;
+                        row-gap: 16px;
+                        &_item {
+                            width: 300px;
+                        }
+                    }
+                }
