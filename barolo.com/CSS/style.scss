@@ -520,6 +520,7 @@
                             justify-content: center;
                             &_wrapper {
                                 &_container {
+                                    list-style: none;
                                     max-width: 300px;
                                     height: 400px;
                                     &_img {
@@ -538,7 +539,44 @@
                         column-gap: 16px;
                         row-gap: 16px;
                         &_item {
+                            position: relative;
+                            list-style: none;
                             width: 300px;
+                            height: 200px;
+                            line-height: none;
+                            &_img {
+                                width: 100%;
+                            }
+                            &_name {
+                                z-index: 3;
+                                font-size: 18px;
+                                margin: 0;
+                                position: absolute;
+                                bottom: 40%;
+                                right: 35%;
+                                background-color: $primary-white;
+                                color: $primary-black;
+                                padding: 8px 12px 8px 12px;
+                            }
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                right: 0%;
+                                width: 100%;
+                                height: 100%;
+                                background: rgba(0, 0, 0, 0.3);
+                            }
+                        }
+                    }
+                }
+                
+                // projects page
+                .projects-list {
+                    &_item {
+                        max-width: 600px;
+                        margin: 0 auto;
+                        &_image {
+                            width: 100%;
                         }
                     }
                 }
