@@ -686,6 +686,10 @@ main .product-list_item::after {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.projects-list {
+  list-style: none;
+}
+
 .projects-list_item {
   max-width: 600px;
   margin: 0 auto;

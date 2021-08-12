@@ -572,6 +572,7 @@
                 
                 // projects page
                 .projects-list {
+                    list-style: none;
                     &_item {
                         max-width: 600px;
                         margin: 0 auto;
