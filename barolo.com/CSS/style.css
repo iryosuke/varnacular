@@ -475,6 +475,10 @@ main .main-container_title {
   margin: 32px 0 32px 0;
 }
 
+main .main-container_description {
+  text-align: center;
+}
+
 main .main-content {
   background-color: #F2F2F2;
   color: #2E2D2D;
@@ -697,5 +701,26 @@ main .product-list_item::after {
 
 .projects-list_item_image {
   width: 100%;
+}
+
+.recruit-content_item {
+  background-color: #F2F2F2;
+  padding: 24px;
+  margin: 48px 0 48px 0;
+}
+
+.recruit-content_item_details {
+  color: #6B6B6B;
+  padding: 0;
+  padding-left: 24px;
+}
+
+.recruit-content_item_details_item {
+  line-height: 2;
+  padding: 12px 0px 12px 0px;
+}
+
+.recruit-content_item_details_item_address {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
