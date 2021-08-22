@@ -651,6 +651,9 @@
                         height: 40px;
                         border-radius: 3px;
                         margin-bottom: 32px;
+                        &:hover {
+                            background-color: $primary-gray;
+                        }
                     }
                     .input11 {
                         width: 500px;
