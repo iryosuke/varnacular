@@ -162,6 +162,9 @@
                                         &_img {
                                             width: 100%;
                                         }
+                                        &_description {
+                                            line-height: 1.5;
+                                        }
                                         &_title {
                                             font-weight: lighter;
                                             font-size: 32px;
@@ -379,11 +382,15 @@
                                 font-weight: bold;
                             }
                         }
+                        .block1 {
+                            margin-top: 64px;
+                        }
                         .block1,
                         .block2 {
                             margin-bottom: 48px;
                             line-height: 2;
                             .subtitle {
+                                color: #484646;
                                 font-size: 18px;
                                 &_description {
                                     font-size: 14px;
@@ -514,26 +521,43 @@
                 main {
                     .main-container {
                         &_title {}
-                        &_description {}
+                        &_description {
+                            line-height: 1.5;
+                        }
                         &_block {
-                            display: grid;
-                            grid-template-columns: 300px 300px;
-                            column-gap: 16px;
-                            row-gap: 16px;
-                            justify-content: center;
                             &_wrapper {
+                                display: grid;
+                                grid-template-columns: 400px 400px;
+                                column-gap: 16px;
+                                row-gap: 64px;
+                                justify-content: center;
+                                padding: 0;
+                                margin: 64px 0 64px 0;
                                 &_container {
                                     list-style: none;
-                                    max-width: 300px;
+                                    max-width: 400px;
                                     height: 400px;
                                     &_img {
                                         width: 100%;
                                     }
-                                    &_title {}
-                                    &_description {}
+                                    &_title {
+                                        color: lighten($primary-black, 10%);
+                                    }
+                                    &_description {
+                                        line-height: 1.5;
+                                        color: $primary-gray
+                                    }
                                 }
                             }
                         }
+                    }
+                    .product-list-background {
+                        background-color: $tertiary-white;
+                    }
+                    .product-list-title {
+                        text-align: center;
+                        margin: 0;
+                        padding: 36px 0 36px 0;
                     }
                     .product-list {
                         display: grid;
@@ -541,6 +565,8 @@
                         justify-content: center;
                         column-gap: 16px;
                         row-gap: 16px;
+                        margin: 0;
+                        padding-bottom: 36px;
                         &_item {
                             position: relative;
                             list-style: none;
@@ -576,9 +602,20 @@
                 // projects page
                 .projects-list {
                     list-style: none;
+                    margin: 64px 0 64px 0;
                     &_item {
                         max-width: 600px;
                         margin: 0 auto;
+                        &_detail {
+                            &_title {
+                                color: lighten($primary-black, 10%);
+                            }
+                            &_description {
+                                color: $primary-gray;
+                                line-height: 1.5;
+                                word-break: break-word;
+                            }
+                        }
                         &_image {
                             width: 100%;
                         }
@@ -590,7 +627,7 @@
                     &_item {
                         background-color: $tertiary-white;
                         padding: 24px;
-                        margin: 48px 0 48px 0;
+                        margin: 64px 0 64px 0;
                         &_title {}
                         &_details {
                             color: $primary-gray;
@@ -610,7 +647,7 @@
                 // CONTACT
                 .main-container_form {
                     text-align: left;
-                    margin-top: 48px;
+                    margin: 64px 0 64px 0;
                     &_item {
                         margin-bottom: 24px;
                     }
