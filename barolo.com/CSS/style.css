@@ -319,7 +319,7 @@ body main .projects-image-container_item:hover .projects-image-container_item_ho
 }
 
 body footer {
-  color: #2E2D2D;
+  color: #6B6B6B;
   background-color: #F2F2F2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,8 +376,8 @@ body footer .links_list_item_link {
 }
 
 body footer .links_list_item_link:hover {
-  color: #2E2D2D;
-  border-bottom: solid #2E2D2D 1px;
+  color: #2e2d2d;
+  border-bottom: solid #2e2d2d 1px;
 }
 
 .flex-container {
@@ -440,7 +440,7 @@ main .main-container {
   padding: 0 16px 0 16px;
   margin: 0 auto;
   max-width: 700px;
-  color: #2E2D2D;
+  color: #2e2d2d;
 }
 
 main .main-container_external {
@@ -481,7 +481,7 @@ main .main-container_description {
 
 main .main-content {
   background-color: #F2F2F2;
-  color: #2E2D2D;
+  color: #2e2d2d;
 }
 
 main .main-content_title {
@@ -611,7 +611,7 @@ main .message-banner_button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #2E2D2D;
+  background-color: #2e2d2d;
   padding: 12px 16px 12px 16px;
 }
 
@@ -677,7 +677,7 @@ main .product-list_item_name {
   bottom: 40%;
   right: 35%;
   background-color: #ffffff;
-  color: #2E2D2D;
+  color: #2e2d2d;
   padding: 8px 12px 8px 12px;
 }
 
@@ -722,5 +722,65 @@ main .product-list_item::after {
 
 .recruit-content_item_details_item_address {
   text-decoration: underline;
+}
+
+.main-container_form {
+  text-align: left;
+  margin-top: 48px;
+}
+
+.main-container_form_item {
+  margin-bottom: 24px;
+}
+
+.main-container_form_input {
+  background-color: #F2F2F2;
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+}
+
+.main-container_form_1 {
+  padding-right: 100px;
+}
+
+.main-container_form_3 {
+  padding-right: 41px;
+}
+
+.main-container_form_5 {
+  padding-right: 84px;
+}
+
+.main-container_form_7 {
+  vertical-align: top;
+  padding-right: 100px;
+}
+
+.main-container_form_9 {
+  vertical-align: top;
+  padding-right: 68px;
+}
+
+.main-container_form_11 {
+  vertical-align: top;
+  padding-right: 84px;
+}
+
+.main-container_form_submit {
+  display: block;
+  margin: 0 auto;
+  background-color: #b8b8b8;
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 3px;
+  margin-bottom: 32px;
+}
+
+.main-container_form .input11 {
+  width: 500px;
+  height: 100px;
 }
 /*# sourceMappingURL=style.css.map */

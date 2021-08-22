@@ -1,9 +1,9 @@
                 // color
+                $primary-black:#2e2d2d;
                 $primary-white:#ffffff;
                 $secondary-white:#FDFDF6;
                 $tertiary-white:#F2F2F2;
                 $primary-gray:#6B6B6B;
-                $primary-black:#2E2D2D;
                 body {
                     font-family: 'PT Sans', "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
                     header {
@@ -267,7 +267,7 @@
                         }
                     }
                     footer {
-                        color: $primary-black;
+                        color: $primary-gray;
                         background-color: $tertiary-white;
                         display: flex;
                         justify-content: space-between;
@@ -604,5 +604,56 @@
                                 }
                             }
                         }
+                    }
+                }
+                
+                // CONTACT
+                .main-container_form {
+                    text-align: left;
+                    margin-top: 48px;
+                    &_item {
+                        margin-bottom: 24px;
+                    }
+                    &_input {
+                        background-color: $tertiary-white;
+                        width: 300px;
+                        height: 40px;
+                        border: none;
+                        border-radius: 3px;
+                    }
+                    &_1 {
+                        padding-right: 100px;
+                    }
+                    &_3 {
+                        padding-right: 41px;
+                    }
+                    &_5 {
+                        padding-right: 84px
+                    }
+                    &_7 {
+                        vertical-align: top;
+                        padding-right: 100px
+                    }
+                    &_9 {
+                        vertical-align: top;
+                        padding-right: 68px
+                    }
+                    &_11 {
+                        vertical-align: top;
+                        padding-right: 84px;
+                    }
+                    &_submit {
+                        display: block;
+                        margin: 0 auto;
+                        background-color: lighten($primary-gray, 30%);
+                        border: none;
+                        width: 200px;
+                        height: 40px;
+                        border-radius: 3px;
+                        margin-bottom: 32px;
+                    }
+                    .input11 {
+                        width: 500px;
+                        height: 100px;
                     }
                 }
