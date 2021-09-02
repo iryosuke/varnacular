@@ -540,7 +540,7 @@
                                 column-gap: 16px;
                                 row-gap: 16px;
                                 margin: 0;
-                                padding-bottom: 36px;
+                                padding: 0;
                                 &_item {
                                     position: relative;
                                     list-style: none;
@@ -576,6 +576,7 @@
                         // projects page
                         .projects-list {
                             list-style: none;
+                            padding: 0;
                             margin: 64px 0 64px 0;
                             &_item {
                                 max-width: 600px;
@@ -697,6 +698,7 @@
                             }
                         }
                         
+                        // navbar
                         .hamburger {
                             display: none;
                             .bar {
@@ -748,5 +750,37 @@
                             }
                             .hamburger.active .bar:nth-child(3) {
                                 transform: translateY(-8px) rotate(-45deg);
+                            }
+                        }
+                        
+                        // about-us
+                        @media only screen and (max-width: 768px) {
+                            .main-content_block_1_right {
+                                display: none;
+                            }
+                            main .main-content_block_1_left {
+                                width: 100%;
+                                margin-bottom: 48px;
+                            }
+                            .main-content_block_2_right {
+                                display: none;
+                            }
+                            main .main-content_block_2_left {
+                                width: 100%;
+                            }
+                        }
+                        
+                        // Services
+                        @media only screen and (max-width: 768px) {
+                            main .main-container_block_wrapper,
+                            main .product-list {
+                                grid-template-columns: none;
+                            }
+                        }
+                        
+                        // contact
+                        @media only screen and (max-width: 768px) {
+                            .main-container_form .input11 {
+                                width: 300px;
                             }
                         }

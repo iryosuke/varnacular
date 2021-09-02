@@ -664,7 +664,7 @@ main .product-list {
           column-gap: 16px;
   row-gap: 16px;
   margin: 0;
-  padding-bottom: 36px;
+  padding: 0;
 }
 
 main .product-list_item {
@@ -702,6 +702,7 @@ main .product-list_item::after {
 
 .projects-list {
   list-style: none;
+  padding: 0;
   margin: 64px 0 64px 0;
 }
 
@@ -894,6 +895,36 @@ main .product-list_item::after {
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
             transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content_block_1_right {
+    display: none;
+  }
+  main .main-content_block_1_left {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  .main-content_block_2_right {
+    display: none;
+  }
+  main .main-content_block_2_left {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .main-container_block_wrapper,
+  main .product-list {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container_form .input11 {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
