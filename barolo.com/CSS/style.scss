@@ -626,13 +626,13 @@
                 .recruit-content {
                     &_item {
                         background-color: $tertiary-white;
-                        padding: 24px;
+                        padding: 24px 36px 24px 36px;
                         margin: 64px 0 64px 0;
                         &_title {}
                         &_details {
                             color: $primary-gray;
                             padding: 0;
-                            padding-left: 24px;
+                            list-style: none;
                             &_item {
                                 line-height: 2;
                                 padding: 12px 0px 12px 0px;
