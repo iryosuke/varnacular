@@ -30,6 +30,11 @@
                     <li class="header_container_nav_list_item"><a class="header_container_nav_list_item_link" href="recruit.html">RECRUIT</a></li>
                     <li class="header_container_nav_list_item"><a class="header_container_nav_list_item_link" href="contact.html">CONTACT</a></li>
                 </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </nav>
         </div>
     </header>
@@ -162,6 +167,27 @@
         currentImageCounter = (currentImageCounter + 1) % slideshowImages.length;
         // slideshowImages[currentImageCounter].style.displpay = "block";
         slideshowImages[currentImageCounter].style.opacity = "1";
+    }
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".header_container_nav_list");
+    const navMenuitem = document.querySelector(".header_container_nav_list_item");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        navMenuitem.classList.toggle("active");
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
     }
 </script>
 
