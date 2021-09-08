@@ -682,6 +682,9 @@ main .product-list-title {
   text-align: center;
   margin: 0;
   padding: 36px 0 36px 0;
+  color: #2e2d2d;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 main .product-list {
