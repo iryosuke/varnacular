@@ -796,6 +796,7 @@ main .product-list_item::after {
   height: 40px;
   border: none;
   border-radius: 3px;
+  margin-top: 8px;
 }
 
 .main-container_form_1 {
