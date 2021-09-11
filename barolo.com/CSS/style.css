@@ -121,6 +121,7 @@ body main .what-we-do_description {
   text-align: center;
   color: #6B6B6B;
   line-height: 1.5;
+  margin: 0 24px 0 24px;
 }
 
 body main .what-we-do .flex-container .what-we-do_content {
@@ -185,13 +186,22 @@ body main .what-we-do .flex-container .what-we-do_content_item_hover_content {
   opacity: 0;
   color: #ffffff;
   position: relative;
-  margin-top: 140px;
+  margin-top: 115px;
   text-align: center;
   letter-spacing: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main .what-we-do .flex-container .what-we-do_content_item_hover_content_title {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 body main .what-we-do .flex-container .what-we-do_content_item_img {
@@ -236,6 +246,7 @@ body main .projects_description {
   color: #6B6B6B;
   text-align: center;
   line-height: 1.5;
+  margin: 0 24px 0 24px;
 }
 
 body main .projects-image-container {
@@ -418,6 +429,10 @@ body footer .links_list_item_link:hover {
   transition: opacity 3s ease-in-out;
 }
 
+svg {
+  margin-left: 8px;
+}
+
 main .main-container {
   padding: 0 16px 0 16px;
   margin: 0 auto;
@@ -521,8 +536,8 @@ main .main-content_block_1_left_content_detail_description {
 
 main .main-content_block_1_left_content_img {
   width: 100%;
-  -webkit-clip-path: circle(30% at center);
-          clip-path: circle(30% at center);
+  -webkit-clip-path: circle(39% at center);
+          clip-path: circle(39% at center);
 }
 
 main .main-content_block_2 {
@@ -574,8 +589,8 @@ main .main-content_block_2_left_content_detail_description {
 
 main .main-content_block_2_left_content_img {
   width: 100%;
-  -webkit-clip-path: circle(30% at center);
-          clip-path: circle(30% at center);
+  -webkit-clip-path: circle(39% at center);
+          clip-path: circle(39% at center);
 }
 
 main .message-banner {
@@ -585,7 +600,7 @@ main .message-banner {
 main .message-banner_description {
   line-height: 2;
   font-size: 14px;
-  margin: 64px 16px 24px 16px;
+  margin: 64px 16px 36px 16px;
 }
 
 main .message-banner_button {
@@ -700,6 +715,7 @@ main .product-list {
   row-gap: 16px;
   margin: 0;
   padding: 0;
+  padding-bottom: 40px;
 }
 
 main .product-list_item {
@@ -862,6 +878,9 @@ main .product-list_item::after {
   .cover-image {
     height: 650px;
   }
+  body main .what-we-do_title {
+    font-size: 36px;
+  }
   body main .what-we-do .flex-container .what-we-do_content_item {
     width: 300px;
     margin: 0;
@@ -871,6 +890,9 @@ main .product-list_item::after {
   }
   body main .what-we-do .flex-container .what-we-do_content_item_hover_content {
     margin-top: 90px;
+  }
+  body main .projects_title {
+    font-size: 36px;
   }
 }
 
