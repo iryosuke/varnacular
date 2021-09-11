@@ -554,7 +554,7 @@
                                                 color: lighten($primary-black, 10%);
                                             }
                                             &_description {
-                                                line-height: 1.5;
+                                                line-height: 1.7;
                                                 color: $primary-gray
                                             }
                                         }
@@ -627,7 +627,7 @@
                                     }
                                     &_description {
                                         color: $primary-gray;
-                                        line-height: 1.5;
+                                        line-height: 1.7;
                                         word-break: break-word;
                                     }
                                 }
@@ -744,6 +744,12 @@
                             }
                             body main .projects_title {
                                 font-size: 36px;
+                            }
+                            main .main-container_block_wrapper_container_title {
+                                font-size: 20px;
+                            }
+                            .projects-list_item_detail_title {
+                                font-size: 20px;
                             }
                         }
                         
