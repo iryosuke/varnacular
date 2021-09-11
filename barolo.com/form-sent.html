@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="apple-touch-icon" href="images/favicon-big.png">
     <script src="JS/style.js"></script>
-    <meta name="description" content="barolo-incへの連絡はこちらのページからお願いします。">
+    <meta name="description" content="barolo-incのホームページです。">
     <meta name="keywords" content="barolo, バローロ,lirio,リーリオ">
     <meta name="viewport" content="width=device-width">
 </head>
@@ -23,7 +23,7 @@
         <div class="header_container">
             <div class="header_container_logo">
                 <a class="header_container_logo_link" href="index.html">
-                    <img class="header_container_logo_link_img" src="images/barolo-logo.png" alt="">
+                    <img class="header_container_logo_link_img" src="images/barolo-logo.png" alt="バローロロゴ">
                 </a>
             </div>
             <nav class="header_container_nav">
@@ -43,42 +43,9 @@
         </div>
     </header>
     <main>
-        <div class="main-container">
-            <h1 class="main-container_title">CONTACT</h1>
-            <p class="main-container_description">ぜひお気軽に以下連絡先にお問い合わせください。<br>（フォームからご連絡頂いた場合、3営業日以内に担当者よりご返信させて頂きます）
-            </p>
-            <form class="main-container_form" action="https://api.staticforms.xyz/submit" method="post">
-                <div class="main-container_form_item">
-                    <label class="main-container_form_1" for="name">お名前</label>
-                    <input class="main-container_form_input" type="text" name="name" id="name"><br>
-                </div>
-                <div class="main-container_form_item">
-                    <label class="main-container_form_3" for="email">E-mailアドレス</label>
-                    <input class="main-container_form_input" type="text" name="email" id="email"><br>
-                </div>
-                <div class="main-container_form_item">
-                    <label class="main-container_form_5" for="number">電話番号</label>
-                    <input class="main-container_form_input" type="number" name="number" id="number"><br>
-                </div class="main-container_form_item">
-                <div class="main-container_form_item">
-                    <label class="main-container_form_7" for="compmany">会社名</label>
-                    <textarea class="main-container_form_input" name="company" id="company"></textarea><br>
-                </div>
-                <div class="main-container_form_item">
-                    <label class="main-container_form_9" for="request">ご依頼内容</label>
-                    <textarea class="main-container_form_input" name="request" id="request" required="true"></textarea><br>
-                </div class="main-container_form_item">
-                <div class="main-container_form_item">
-                    <label class="main-container_form_11" for="request-detail">内容詳細</label>
-                    <textarea class="main-container_form_input input11" name="request-detail" id="request-detail" required="true"></textarea><br>
-                </div>
-                <input class="main-container_form_13" type="text" name="honeypot" style="display:none">
-                <input type="hidden" name="accessKey" value="dc5a4a76-172c-4b46-ae0b-abde3eaab94f">
-                <input type="hidden" name="subject" value="barolo Inc. コンタクトフォームからのお問い合わせ">
-                <input type="hidden" name="replyTo" value="@">
-                <input type="hidden" name="redirectTo" value="https://barolo-inc.co.jp/form-sent.html">
-                <input class="main-container_form_submit" type="submit" value="フォームの内容を送信">
-            </form>
+        <div class="form-sent">
+            <h2 class="form-sent_title">送信完了</h2>
+            <p class="form-sent_description">お問い合わせありがとうございます。メッセージは送信されました。</p>
         </div>
     </main>
     <footer>
@@ -104,6 +71,24 @@
     </footer>
 </body>
 <script>
+    const slideshowImages = document.querySelectorAll(".slideshow_image");
+
+    const nextImageDelay = 6000;
+    let currentImageCounter = 0;
+
+    // slideshowImages[currentImageCounter].style.displpay = "block";
+    slideshowImages[currentImageCounter].style.opacity = 1;
+
+    setInterval(nextImage, nextImageDelay);
+
+    function nextImage() {
+        // slideshowImages[currentImageCounter].style.display = "none";
+        slideshowImages[currentImageCounter].style.opacity = "0";
+        currentImageCounter = (currentImageCounter + 1) % slideshowImages.length;
+        // slideshowImages[currentImageCounter].style.displpay = "block";
+        slideshowImages[currentImageCounter].style.opacity = "1";
+    }
+
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".header_container_nav_list");
     const navMenuitem = document.querySelector(".header_container_nav_list_item");
