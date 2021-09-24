@@ -422,8 +422,8 @@ body footer .links_list_item_link:hover {
   left: 0;
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0;
   -webkit-transition: opacity 3s ease-in-out;
   transition: opacity 3s ease-in-out;
