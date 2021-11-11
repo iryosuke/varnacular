@@ -434,8 +434,10 @@
                                                     }
                                                 }
                                                 &_img {
-                                                    width: 100%;
-                                                    clip-path: circle(42% at center);
+                                                    display: block;
+                                                    margin: 0 auto;
+                                                    width: 80%;
+                                                    clip-path: circle(45% at center);
                                                 }
                                             }
                                         }
@@ -472,8 +474,10 @@
                                                     }
                                                 }
                                                 &_img {
-                                                    width: 100%;
-                                                    clip-path: circle(42% at center);
+                                                    display: block;
+                                                    margin: 0 auto;
+                                                    width: 80%;
+                                                    clip-path: circle(45% at center);
                                                 }
                                             }
                                         }
