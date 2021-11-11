@@ -536,8 +536,8 @@ main .main-content_block_1_left_content_detail_description {
 
 main .main-content_block_1_left_content_img {
   width: 100%;
-  -webkit-clip-path: circle(39% at center);
-          clip-path: circle(39% at center);
+  -webkit-clip-path: circle(42% at center);
+          clip-path: circle(42% at center);
 }
 
 main .main-content_block_2 {
@@ -590,8 +590,8 @@ main .main-content_block_2_left_content_detail_description {
 
 main .main-content_block_2_left_content_img {
   width: 100%;
-  -webkit-clip-path: circle(39% at center);
-          clip-path: circle(39% at center);
+  -webkit-clip-path: circle(42% at center);
+          clip-path: circle(42% at center);
 }
 
 main .message-banner {
